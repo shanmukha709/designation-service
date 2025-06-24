@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "https://our-circle-ui.onrender.com",
+        "http://localhost:3000"
+})
 @RestController
 @RequestMapping("/designation")
 public class DesignationController {
